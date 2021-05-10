@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "0f7da9bd-6a29-44e4-a66c-1f54462ad467",
+		"name": "bio-django",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"args\": \"HELP\",\r\n    \"exe\": \"C:\\\\Users\\\\Shlomo\\\\source\\\\repos\\\\Hand Reader\\\\OUTPUT\\\\RELESE\\\\Hand Reader.exe\",\r\n    \"cwd\": \"C:\\\\Users\\\\Shlomo\\\\source\\\\repos\\\\Hand Reader\\\\OUTPUT\\\\RELESE\",\r\n    \"timeout\":15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				},
+				"description": "basic request\nThat couse timeout"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arg\": \"GET_USER 9 w.json 192.168.1.80\",\r\n    \"dir\": \"C:\\\\Users\\\\Shlomo\\\\source\\\\repos\\\\Hand Reader\\\\OUTPUT\\\\RELESE\\\\Hand Reader.exe\",\r\n    \"cwd\": \"C:\\\\Users\\\\Shlomo\\\\source\\\\repos\\\\Hand Reader\\\\OUTPUT\\\\RELESE\",\r\n    \"timeout\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				},
+				"description": "This exemple should return error"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"args\": \"GET_USER 9 w.json 192.168.1.80\",\r\n    \"exe\": \"C:\\\\Users\\\\Shlomo\\\\source\\\\repos\\\\Hand Reader\\\\OUTPUT\\\\RELESE\\\\Hand Reader.exe\",\r\n    \"cwd\": \"C:\\\\Users\\\\Shlomo\\\\source\\\\repos\\\\Hand Reader\\\\OUTPUT\\\\RELESE\",\r\n    \"timeout\":15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
