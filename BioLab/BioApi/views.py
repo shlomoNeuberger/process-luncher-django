@@ -28,7 +28,7 @@ def main_call(req:HttpRequest,*args,**kwargs):
         t = {}
         stdout = ""
         try:
-            p = subprocess.run(args,cwd=cwd,capture_output=True,timeout=5)
+            p = subprocess.run(args,cwd=cwd,capture_output=True,timeout=timeout)
             t['response'] = {
             'exit Code': p.returncode,
             'stdout': p.stdout.decode('utf-8'),
